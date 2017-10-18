@@ -1,0 +1,87 @@
+<html><body>
+	<a href = "/2017/10/17/h5学习">返回</a>
+    <h2>基础</h2>
+    <p>我的第一个段落。</p>
+	<a href="http://www.runoob.com">这是一个链接使用了 href 属性</a>
+	hr 标签定义水平线：
+	<hr>
+	<b>加粗文本</b>
+	<i>斜体文本</i>
+	<code>电脑自动输出</code>
+	这是 <sub> 下标</sub> 和 <sup> 上标</sup>
+	<h2>CCS</h2>
+	<div style="opacity:0.5;position:absolute;left:50px;width:300px;height:150px;background-color:#40B3DF"></div>
+	<div style="font-family:verdana;padding:20px;border-radius:10px;border:10px solid #EE872A;">
+	<div style="opacity:0.3;position:absolute;left:120px;width:100px;height:200px;background-color:#8AC007"></div>
+	<!-- <div style="color:#40B3DF;">Colors -->
+	<span style="background-color:#B4009E;color:#ffffff;">Boxes</span>
+	<b style="background-color:red;">红色背景</b>
+	<h6 style="font-family:arial;color:red;font-size:20px;">字体颜色大小</h6>
+	<h6 style="text-align:center;">居中对齐的标题</h6>
+	无序列表:
+	<ul><li>Coffee</li><li>Tea</li><li>Milk</li></ul>	
+	有序列表:
+	 <ol start = '5'>  <li>Coffee</li>  <li>Tea</li>  <li>Milk</li>  </ol>
+	<div id="header" style="background-color:#FFA500;">
+	<h1 style="margin-bottom:0;">主要的网页标题</h1></div>   
+	<div id="menu" style="background-color:#FFD700;height:200px;width:100px;float:left;">
+	<b>菜单</b></br>HTML</br>CSS</br>JavaScript</div>   
+	<div id="content" style="background-color:#EEEEEE;height:200px;width:400px;float:left;">
+	内容在这里</div>   
+	<div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+	版权 © runoob.com</div>
+	<h2>表单使用表单标签</h2>
+	<form>
+	<h4>输入框</h4>
+	First name: <input type="text" name="firstname"><br>
+	Last name: <input type="text" name="lastname"></br>
+	Password: <input type="password" name="pwd">
+	<h4>单选按钮</h4>
+	<input type="radio" name="sex" value="male">Male<br>
+	<input type="radio" name="sex" value="female">Female
+	<h4>复选框</h4>
+	<input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+	<input type="checkbox" name="vehicle" value="Car">I have a car 
+	<h4>简单下拉列表</h4>
+	<select name="cars">
+	<option value="volvo">Volvo</option>
+	<option value="saab">Saab</option>
+	<option value="fiat">Fiat</option>
+	<option value="audi">Audi</option>
+	</select>
+	<h4>按钮</h4>
+	<input type="button" value="Hello world!">
+	</form>
+	<h4>文本域</h4>
+	<textarea rows="5" cols="10">
+	我是一个文本框。
+	</textarea>
+	<h2>脚本</h2>
+	<p id="demo">JavaScript 可以触发事件，就像按钮点击。</p>
+	<button type="button" onclick="myFunction()">点我</button>
+	<script>
+	function myFunction()
+	{
+		document.getElementById("demo").innerHTML="Hello JavaScript!";
+	}
+	</script>
+	<h2>速查列表</h2>
+	<a href="http://www.runoob.com/html/html-quicklist.html">速查列表</a>
+	<h2>Canvas</h2>
+	<canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">
+	您的浏览器不支持 HTML5 canvas 标签。
+	</canvas>
+	<script>
+	var c=document.getElementById("myCanvas");
+	var ctx=c.getContext("2d");
+	ctx.fillStyle="#FF0000";
+	ctx.fillRect(0,0,150,75);
+	ctx.moveTo(0,0);
+	ctx.lineTo(200,100);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.arc(95,50,40,0,2*Math.PI);
+	ctx.stroke();
+	</script>
+</body></html>
+
